@@ -5,10 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>subject-1 exam</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    #root {
+      width: 100vw;
+    }
+
+    .width-10vw {width:10vw;}
+    .width-20vw {width:20vw;}
+    .width-30vw {width:30vw;}
+    .width-40vw {width:40vw;}
+    .width-50vw {width:50vw;}
+    .width-60vw {width:60vw;}
+    .width-70vw {width:70vw;}
+    .width-80vw {width:80vw;}
+    .width-90vw {width:90vw;}
+    .width-100vw {width:100vw;}
+    
+    
+    .height-10vh {height:10vh;}
+    .height-20vh {height:20vh;}
+    .height-30vh {height:30vh;}
+    .height-40vh {height:40vh;}
+    .height-50vh {height:50vh;}
+    .height-60vh {height:60vh;}
+    .height-70vh {height:70vh;}
+    .height-80vh {height:80vh;}
+    .height-90vh {height:90vh;}
+    .height-100vh {height:100vh;}
+    .height-200vh {height:200vh;}
+    
+    .bg-col-1 {background-color: #f1f1f1;}
+    .bg-col-2 {background-color:aqua;}
+    .bg-col-3 {background-color:blueviolet;}
+    .bg-col-4 {background-color:darkgreen;}
+    .bg-col-5 {background-color:darkkhaki;}
+    .bg-col-6 {background-color:#999;}
+
+
+  </style>
 </head>
 <body>
   <div id="root">
-    header+nav+section>section*2^+footer
+    <header class="width-100vw height-20vh bg-col-1">
+      header부분
+    </header>
+    <nav class="width-100vw height-20vh bg-col-2">
+      nav 부분
+    </nav>
+    <section class="width-100vw height-200vh bg-col-5">
+      <section> 흰색 배경 섹션</section>
+      <section> 파란색 배경 섹션</section>
+    </section>
+    <footer class="width-100vw height-20vh bg-col-6">
+      footer 부분
+    </footer>
   </div>
 </body>
 </html>
