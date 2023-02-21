@@ -14,21 +14,61 @@
     #root > header, nav, section , footer {
       width:100vw;
     }
+    /* header */
     #root > header {
       height: 20vh;
       background-color: ccc;
+      /* flex-set */
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
     }
+    /* nav */
     #root > nav {
       height: 20vh;
       background-color: darkcyan;
+
+      /* mobile viewport */
+      display: none;
     }
+    /* section */
     #root > section {
       height: 200vh;
       background-color:aqua;
+      /* flex-set */
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      border: 1px solid black;
     }
+    /* 첫번째 섹션 */
+    #root > section > section:nth-child(1) {
+      height:100vw;
+      background-color: #f1f1f1;
+    }
+    /* 두번째 섹션 */
+    #root > section > section:nth-child(2) {
+      height:100vw;
+      background-color:chocolate;
+    }
+    #root > section > section:nth-child(2) > div {
+      /* flex-set */
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    /* footer */
     #root > footer {
       height: 20vh;
       background-color:#222;
+      color:#ccc;
+      padding: 20px;
     }
   </style>
 </head>
@@ -62,11 +102,13 @@
       </section>
       <section>
         <div>
-          <h2>KOREA</h2>
-          <h2>DIGITAL</h2>
-          <h2>TRAINING</h2>
+          <div>
+            <h2>KOREA</h2>
+            <h2>DIGITAL</h2>
+            <h2>TRAINING</h2>
+          </div>
+          <div>arrow</div>
         </div>
-        <div>arrow</div>
         <hr/>
       </section>
     </section>
